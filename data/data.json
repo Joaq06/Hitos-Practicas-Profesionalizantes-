@@ -1,0 +1,74 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "codigoSocio": "SOC-101",
+      "nombre": "Ana Pérez",
+      "email": "ana@bibliotech.com",
+      "password": "123",
+      "rol": "socio"
+    },
+    {
+      "id": 2,
+      "codigoSocio": "SOC-102",
+      "nombre": "Joaquín Suárez",
+      "email": "joaquin@bibliotech.com",
+      "password": "123",
+      "rol": "socio"
+    },
+    {
+      "id": 3,
+      "codigoSocio": "ADM-01",
+      "nombre": "Carlos Bibliotecario",
+      "email": "admin@bibliotech.com",
+      "password": "123",
+      "rol": "admin"
+    },
+    {
+      "id": 4,
+      "codigoSocio": "ADM-02",
+      "nombre": "Elena Admin",
+      "email": "elena@bibliotech.com",
+      "password": "123",
+      "rol": "admin"
+    }
+  ],
+  "libros": [
+    {
+      "id": 1,
+      "titulo": "Rayuela",
+      "autor": "Julio Cortázar",
+      "estado": "Disponible"
+    },
+    {
+      "id": 2,
+      "titulo": "Ficciones",
+      "autor": "Jorge Luis Borges",
+      "estado": "Solo Sala de Lectura"
+    },
+    {
+      "id": 3,
+      "titulo": "Cien Años de Soledad",
+      "autor": "Gabriel García Márquez",
+      "estado": "No disponible (Agotado)"
+    }
+  ],
+  "prestamos": [
+    {
+      "id": 1,
+      "codigoSocio": "SOC-102",
+      "libro": "Rayuela",
+      "modalidad": "Domicilio",
+      "devolverAntesDe": "23/08/2026",
+      "estado": "Activo"
+    },
+    {
+      "id": 2,
+      "codigoSocio": "SOC-102",
+      "libro": "Ficciones",
+      "modalidad": "Sala",
+      "devolverAntesDe": "01/08/2026",
+      "estado": "Devuelto"
+    }
+  ]
+}
