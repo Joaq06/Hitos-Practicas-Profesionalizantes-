@@ -28,7 +28,49 @@ Aplicación web integral desarrollada para **Prácticas Profesionalizantes I** (
 | :--- | :--- | :--- | :--- |
 | `GET` | `/api/libros` | Lista el catálogo completo de libros y sus estados. | Ninguno |
 | `GET` | `/api/prestamos` | Lista todos los préstamos o filtra por socio. | Query opcional: `?codigoSocio=SOC-102` |
-| `POST` | `/api/prestamos` | Registra un nuevo préstamo validando cupo (máx. 3) y modalidad. | JSON: `{ codigoSocio, libro, modalidad }` |
+| `POST` | `/api/prestamos` | Registra un nuevo préstamo validando cupo (máx. 3) y modalidad. | JSON: `{ codigoS# BiblioTech - Sistema de Gestión de Biblioteca (MVP)
+
+Aplicación web integral desarrollada para **Prácticas Profesionalizantes I** (*Tecnicatura Superior en Desarrollo de Software - ISFT Leopoldo Marechal*).
+
+## Equipo desarrollador
+- Joaquín Cardozo
+- Katia Pastorini
+- Michael Villaruel
+- Bianca Núñez
+- Joaquín Suárez
+
+## Descripción del sistema
+Plataforma web orientada a la gestión y control de préstamos bibliotecarios. Permite consultar el catálogo, buscar libros, registrar solicitudes para retiro a domicilio o lectura en sala y gestionar devoluciones mediante una API REST.
+
+## Estructura del repositorio
+- `/backend`: API REST en Node.js y Express con almacenamiento en memoria y validación de reglas de negocio.
+- `/frontend`: Interfaz web estática en HTML, CSS y JavaScript puro consumiendo la API mediante `fetch()`.
+- `/documentacion`: Relevamiento funcional, anotaciones técnicas y documentación del proyecto.
+
+## Instalación y ejecución local
+
+### Backend
+1. Ingresar a la carpeta: `cd backend`
+2. Instalar dependencias: `npm install`
+3. Iniciar servidor: `npm start` (puerto `4000`)
+
+### Frontend
+1. Abrir `/frontend/index.html` mediante Live Server en Visual Studio Code.
+
+## Endpoints de la API REST
+
+| Método | Ruta | Operación | Datos requeridos |
+| :--- | :--- | :--- | :--- |
+| `GET` | `/api/libros` | Lista el catálogo completo de libros y sus estados. | Ninguno |
+| `GET` | `/api/prestamos` | Lista todos los préstamos o filtra por socio. | Query opcional: `?codigoSocio=SOC-102` |
+| `POST` | `/api/prestamos` | Registra un nuevo préstamo validando cupo (máx. 3), disponibilidad y modalidad. | JSON: `{ codigoSocio, libroId, modalidad }` |
+| `PATCH` | `/api/prestamos/:id` | Actualiza el estado de un préstamo (ej. a `Devuelto`). | JSON: `{ estado }` |
+
+## Mejoras futuras
+- Autenticación real de usuarios y panel de administración ampliado.
+- Sistema de notificaciones por correo electrónico ante vencimientos próximos.
+- Búsqueda avanzada por género, autor o año de publicación.
+- Módulo de penalizaciones por devoluciones fuera de término.ocio, libro, modalidad }` |
 | `PATCH` | `/api/prestamos/:id` | Actualiza el estado de un préstamo (ej. a `Devuelto`). | JSON: `{ estado }` |
 =======
 1. Caso de estudio
@@ -47,7 +89,6 @@ Practicas Profesionalizantes I
 Joaquin Cardozo
 Katia Pastorini
 Michael Villaruel
-Bianca Nunez
 Joaquin Suarez
 
 
@@ -87,4 +128,3 @@ Aplicación web diseñada para simplificar el préstamo de libros en bibliotecas
 -Sistema de notificaciones: Envío de alertas automáticas por correo electrónico cuando un préstamo esté próximo a vencer.
 -Búsqueda avanzada de libros: Implementación de filtros de búsqueda por género, autor o año de publicación para facilitar la localización de ejemplares.
 -Módulo de penalizaciones: Registro y gestión de suspensiones o multas para los socios que devuelvan los libros fuera de término. 
->>>>>>> 3b40c6bea47173fa1260c16aca2b1fef5505c284
