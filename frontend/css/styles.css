@@ -1,0 +1,203 @@
+body {
+    font-family: "Trebuchet MS", "Segoe UI", Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding-top: 26px;
+    border-bottom: 4px solid #172554;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+header > p {
+    margin: 0 0 24px 0;
+    color: #dbeafe;
+    font-size: 16px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    background-color: #1e293b;
+    padding: 12px 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 14px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a:hover {
+    background-color: #2563eb;
+}
+
+nav label {
+    color: #e2e8f0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav select {
+    margin-bottom: 0;
+    padding: 7px 10px;
+    font-size: 14px;
+    background-color: white;
+    color: #111;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+section {
+    background-color: white;
+    padding: 18px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.buscador form {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: auto;
+}
+
+.buscador input {
+    margin-bottom: 0;
+}
+
+.buscador button {
+    margin-bottom: 0;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.catalogo > h2,
+.catalogo > p {
+    width: 100%;
+}
+
+.tarjeta-libro {
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    padding: 12px;
+    width: 220px;
+    background-color: #fafafa;
+}
+
+.tarjeta-libro h3 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+}
+
+input,
+select,
+button {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #15803d;
+}
+
+table button {
+    margin-bottom: 0;
+    padding: 5px 8px;
+    background-color: #2563eb;
+}
+
+.comprobante {
+    border: 2px dashed #555;
+    border-radius: 6px;
+    padding: 14px;
+    margin: 15px 0;
+    background-color: #fef9c3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #1e293b;
+    color: white;
+}
+
+footer {
+    background-color: #1e293b;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.selector-rol label {
+    color: #e2e8f0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.selector-rol select {
+    margin-bottom: 0;
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: white;
+    color: #111;
+}
